@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Erebrus DVPN - Decentralized Access",
+  title: "Erebrus ",
   description: "Unrestricted Uncensored Web Access with Erebrus Decentralized VPN",
-    generator: 'v0.dev'
+ 
 }
 
 export default function RootLayout({
@@ -19,6 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+ 
     <html lang="en" suppressHydrationWarning>
       <body className={cn("min-h-screen bg-background font-sans antialiased", inter.className)}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
@@ -27,6 +28,7 @@ export default function RootLayout({
             <div className="flex-1">{children}</div>
           </div>
         </ThemeProvider>
+ 
       </body>
     </html>
   )
